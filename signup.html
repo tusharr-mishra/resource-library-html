@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Registration Sign-Up Form</h1>
+    </header>
+
+    <main>
+
+        <!-- Intro -->
+        <section>
+            <p>Please fill out the form below to register.</p>
+        </section>
+
+        <br><br>
+
+        <!-- Form -->
+        <form>
+
+            <!-- Basic Details -->
+            <div>
+                <input type="text" placeholder="Name of the Student"> <br><br>
+                <input type="number" placeholder="Contact Number (+91)"> <br><br>
+                <input type="email" placeholder="Email"> <br><br>
+                <input type="password" placeholder="Password"> <br><br>
+            </div>
+
+            <!-- Gender Selection -->
+            <div>
+                <p>Select your Gender:</p>
+
+                <!-- IMPORTANT: Same name = one selection only -->
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Others"> Others
+            </div>
+
+            <br>
+
+            <!-- Courses -->
+            <div>
+                <p>Select courses you want to pursue:</p>
+
+                <label>
+                    <input type="checkbox" value="HTML"> HTML
+                </label>
+
+                <label>
+                    <input type="checkbox" value="CSS"> CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" value="JS"> JavaScript
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Backend"> Backend
+                </label>
+            </div>
+
+            <br>
+
+            <!-- Price Range -->
+            <div>
+                <p>Select price range:</p>
+
+                <select>
+                    <option>Select</option>
+                    <option value = "1k - 4k">1k - 4k</option>
+                    <option>5k - 9k</option>
+                    <option>9k - 13k</option>
+                    <option>13k - 17k</option>
+                    <option>18k - 22k</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Feedback -->
+            <textarea placeholder="Put down your suggestions..." rows="4" cols="30"></textarea>
+
+            <br><br>
+
+            <!-- Submit -->
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+    <!-- Video Section -->
+    <section>
+        <video src="video_clip/SCREENRECORD.mp4" controls height="400"></video>
+    </section>
+
+    <br>
+
+    <!-- Back Link -->
+    <a href="index.html">Back to Home Page</a>
+
+    <footer></footer>
+
+</body>
+</html>
