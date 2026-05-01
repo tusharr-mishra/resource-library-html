@@ -3,109 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Page</title>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Registration Sign-Up Form</h1>
-    </header>
+<header>
+    <h1>Register for Resources</h1>
+</header>
 
-    <main>
+<main>
 
-        <!-- Intro -->
-        <section>
-            <p>Please fill out the form below to register.</p>
-        </section>
+<section>
+    <p>Fill in your details to access curated learning resources.</p>
+</section>
 
-        <br><br>
+<form>
 
-        <!-- Form -->
-        <form>
+<input type="text" placeholder="Full Name">
+<input type="number" placeholder="Contact Number">
+<input type="email" placeholder="Email Address">
+<input type="password" placeholder="Password">
 
-            <!-- Basic Details -->
-            <div>
-                <input type="text" placeholder="Name of the Student"> <br><br>
-                <input type="number" placeholder="Contact Number (+91)"> <br><br>
-                <input type="email" placeholder="Email"> <br><br>
-                <input type="password" placeholder="Password"> <br><br>
-            </div>
+<p>Gender</p>
+<label><input type="radio" name="gender"> Male</label>
+<label><input type="radio" name="gender"> Female</label>
 
-            <!-- Gender Selection -->
-            <div>
-                <p>Select your Gender:</p>
+<p>Courses</p>
+<label><input type="checkbox"> HTML</label>
+<label><input type="checkbox"> CSS</label>
+<label><input type="checkbox"> JavaScript</label>
 
-                <!-- IMPORTANT: Same name = one selection only -->
-                <input type="radio" name="gender" value="Male"> Male
-                <input type="radio" name="gender" value="Female"> Female
-                <input type="radio" name="gender" value="Others"> Others
-            </div>
+<p>Budget</p>
+<select>
+<option>Select</option>
+<option>1k - 4k</option>
+<option>5k - 9k</option>
+</select>
 
-            <br>
+<textarea placeholder="Suggestions"></textarea>
 
-            <!-- Courses -->
-            <div>
-                <p>Select courses you want to pursue:</p>
+<input type="submit" value="Submit">
 
-                <label>
-                    <input type="checkbox" value="HTML"> HTML
-                </label>
+</form>
 
-                <label>
-                    <input type="checkbox" value="CSS"> CSS
-                </label>
+<section>
+    <video src="assets\video\screenrecord.mp4" controls></video>
+</section>
 
-                <label>
-                    <input type="checkbox" value="JS"> JavaScript
-                </label>
+<a href="index.html">Back to Home</a>
 
-                <label>
-                    <input type="checkbox" value="Backend"> Backend
-                </label>
-            </div>
+</main>
 
-            <br>
-
-            <!-- Price Range -->
-            <div>
-                <p>Select price range:</p>
-
-                <select>
-                    <option>Select</option>
-                    <option value = "1k - 4k">1k - 4k</option>
-                    <option>5k - 9k</option>
-                    <option>9k - 13k</option>
-                    <option>13k - 17k</option>
-                    <option>18k - 22k</option>
-                </select>
-            </div>
-
-            <br>
-
-            <!-- Feedback -->
-            <textarea placeholder="Put down your suggestions..." rows="4" cols="30"></textarea>
-
-            <br><br>
-
-            <!-- Submit -->
-            <input type="submit" value="Submit">
-
-        </form>
-
-    </main>
-
-    <!-- Video Section -->
-    <section>
-        <video src="video_clip/SCREENRECORD.mp4" controls height="400"></video>
-    </section>
-
-    <br>
-
-    <!-- Back Link -->
-    <a href="index.html">Back to Home Page</a>
-
-    <footer></footer>
+<footer></footer>
 
 </body>
 </html>
